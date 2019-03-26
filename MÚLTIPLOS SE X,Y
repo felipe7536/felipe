@@ -1,0 +1,23 @@
+'''Esta funÃ§Ã£o que determina os N primeiros mÃºltiplos de x,y.
+aluno;FEIPE RODRIGUES RIBEIRO
+DRE:119052031
+Curso:MatemÃ¡tica Aplicada
+Disciplina:TÃ³picos de Mat. APL.A'''
+z=[]
+r=[]
+w=float(input('Escolha o primeiro nÃºmero que queira achar entre os N primeiros mÃºltiplos:'))
+print('')
+y=float(input('Defina o segundo nÃºmero que queira encontrar entre os N primeiros mÃºltiplos:'))
+print('')
+n=int(input('Defina o nÃºmero N de mÃºltiplos que queira encontrar:'))
+for x in range(n):
+    a=x*w
+    z.append(a)
+    b=x*y
+    r.append(b)
+print('Os '+str(n)+'primeiros mÃºltiplos de'+str(w)+'sÃ£o: ')
+print('')
+print(z)
+print('os '+str(n)+' primeiros mÃºltiplos de'+str(w)+'sÃ£o: ')
+print('')
+print(r)
