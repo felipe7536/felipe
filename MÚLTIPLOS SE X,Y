@@ -1,23 +1,17 @@
-'''Esta funÃ§Ã£o que determina os N primeiros mÃºltiplos de x,y.
+Esta função que determina os N primeiros múltiplos de x,y.
 aluno;FEIPE RODRIGUES RIBEIRO
 DRE:119052031
 Curso:MatemÃ¡tica Aplicada
 Disciplina:TÃ³picos de Mat. APL.A'''
 z=[]
-r=[]
-w=float(input('Escolha o primeiro nÃºmero que queira achar entre os N primeiros mÃºltiplos:'))
+w=int(input('Escolha o primeiro número que queira achar entre os N primeiros múltiplos:'))
 print('')
-y=float(input('Defina o segundo nÃºmero que queira encontrar entre os N primeiros mÃºltiplos:'))
+y=int(input('Defina o segundo número que queira encontrar entre os N primeiros múltiplos:'))
 print('')
-n=int(input('Defina o nÃºmero N de mÃºltiplos que queira encontrar:'))
-for x in range(n):
-    a=x*w
+n=int(input('Defina o número N de múltiplos que queira encontrar:'))
+for x in range(1,n+1):
+    a=x*w*y
     z.append(a)
-    b=x*y
-    r.append(b)
-print('Os '+str(n)+'primeiros mÃºltiplos de'+str(w)+'sÃ£o: ')
+print('Os '+str(n)+'primeiros múltiplos de'+str(w)+'e'+str(w)+'são: ')
 print('')
 print(z)
-print('os '+str(n)+' primeiros mÃºltiplos de'+str(w)+'sÃ£o: ')
-print('')
-print(r)
