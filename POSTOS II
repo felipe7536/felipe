@@ -1,0 +1,32 @@
+ ''' O programa serve para o descritivo que se estende N estao no raio de X KM. Aluno:FELIPE RODRIGUES RIBEIRO
+   DRE:119052031
+   Curso: Matemática Aplicada
+   Disciplina:Tópico Mat. Aplic.A'''
+
+b = []
+c = []
+print ( ' Ache os postos no raio de X km ' )
+print ( ' ' )
+print ( ' ' )
+n = int ( entrada ( ' Defina o número de posts: ' ))
+print ( ' ' )
+a = float ( input ( ' Escolha em cada qual, você deseja que o dos ' + str (n) + 'são os contidos: ' ))
+print ( ' ' )
+coordenada1 = float ( input ( ' Defin a sua coordenada x: ' ))
+coordenada2 = float ( input ( ' Defin a sua coordenada y: ' ))
+print ( ' ' )
+print ( ' ' )
+para eu na  faixa (n):
+        se eu ! = (n):
+                i + = 1
+                x = float ( input ( ' Defina a coordenada x do seu posto ' + str (i) + ' : ' ))
+                y = float ( input ( ' Defina a coordenada e o seu número de posto ' + str (i) + ' : ' ))
+                distância = ((x - coordenada1) ** 2 + (y - coordenada2) ** 2 ) ** 0,5       
+                se distância < a:
+                       c.append ( ' ( ' + str (x) + ' , ' + str (y) + ' ) ' )
+                       u =  len (c)
+print ( ' ' )
+print ( ' existem ' + str (u) + ' postos no raio de ' + str (a) + ' km; ' )
+print ( ' São Essas como coordenadas dos ' + str (u) + ' Postos Que estao Neste raio: ' )
+print ( ' ' )
+imprimir (c)
