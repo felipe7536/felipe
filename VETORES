@@ -1,0 +1,30 @@
+''' Esse programa tem o intuito de calcular a soma de vetores x,y em N dimensÃµes.
+aluno:FELIPE RODRIGUES RIBEIRO
+DRE:119052031
+Curso: MatemÃ¡tica Aplicada
+Disciplina: TÃ³picos de Mat.'''
+
+vetor1=[]
+vetor2=[]
+soma_vetorial=[]
+print('FunÃ§Ã£o para somar vetores x e y em N dimensÃµes')
+print('')
+n=int(input('Defina as N dimensÃµes do seu vetor A e B: '))
+print('')
+i=0
+for k in range(n):
+    if k !=n:
+        i+=1
+        x=float(input('Defina a coodernada do seu vetor A na ' +str(i)+ ' dimensÃ£o (caso o vetor nÃ£o chegue atÃ© esta dimensÃ£o digite 0): '))
+        y=float(input('Defina a coordenada do seu vetor B na ' +str(i)+ ' dimensÃ£o ( caso o vetor nÃ£o chegue atÃ© esta dimensÃ£o digite 0): '))
+        j= x+y
+        vetor1.append(x)
+        vetor2.append(y)
+        soma_vetorial.append(j)
+    if i==n:
+        break
+print('')
+print('Essa Ã© a soma dos vetores ' +str(vetor2) +' nas '+str(n)+' dimensÃµes: ')
+print(soma_vetorial)
+
+
