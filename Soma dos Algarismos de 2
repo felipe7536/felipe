@@ -1,0 +1,17 @@
+''' Esse programa tem o intuito de calcular a soma dos algarismos das potências de 2.
+aluno:FELIPE RODRIGUES RIBEIRO
+DRE:119052031
+Curso: Matemática Aplicada
+Disciplina: Tópicos de Mat.'''
+
+
+
+q=int(input('Digite o número que deseja elevar a 2:'))
+print('')
+
+a=2**q
+b=str(a)
+soma=0
+for i in range(len(b)):
+    soma= soma + int(b[i])
+print(soma)
