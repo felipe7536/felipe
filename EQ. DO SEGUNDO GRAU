@@ -1,27 +1,37 @@
 ''' UFRJ - IM
 aluno: FELIPE RODRIGUES RIBEIRO
 DRE:119052032
-CURSO:MatemÃ¡tica Aplicada
-disciplina: TÃ³picos Mat.
-Esse programa se chama Calculadora de EquaÃƒÂ§ÃƒÂµes do segundo grau.
-Feito com o intuito de ensinar a resolver esse tipo de equaÃƒÂ§ÃƒÂ£o.'''
+CURSO:Matemática Aplicada
+Disciplina: Topicos da Mat. Aplic. A
+Esse programa se chama Calculadora de Equações do Segundo Grau
+Feito com o intuito de ensinar a resolver esse tipo de equação.'''
 
-a= float(input('QUAL o coeficiente XÃ‚Â² ?'))
-b= float(input('Qual o coeficiente de X ?'))
-c=float(input('Qual o coeficiente independente?'))
+a= float(input('Qual o coeficiente de X²? '))
+while a==0:   
+    print('')
+    print('Essa não é uma equação do segundo grau')
+    a= float(input('Fale outro coeficiente de X²? '))
+
+b=float(input('Qual o coeficiente de X ? '))
+c=float(input('Qual o coeficiente independente? '))
+
 delta= b**2 - 4*a*c
 k=2*a
 xlinha1= -b + delta**(0.5)
-xlinha2=-b - delta**(0.5)
+xlinha2= -b - delta**(0.5)
 xklinha1=xlinha1/k
 xklinha2=xlinha2/k
-if a !=0:
-    
 
-    print('')
-    print('Essa nÃ£o Ã© uma equaÃ§Ã£o do segundo grau') 
 
 if delta<0:
-    print('Essa equaÃƒÂ§ÃƒÂ£o nÃƒÂ£o tem raÃƒÂ­z real')
+    print('Essa equação não tem raíz real')
+    
 elif delta==0:
-    print('Essa equaÃ§Ã£o possui uma Ãºnica raÃ­z real')
+    print('Essa equação possui uma única raíz real')
+    print('E a raíz é:')
+    print(xklinha1)
+    
+else:
+    print('Essa equação possui duas raízes distintas')
+    print('As raízes são:')
+    print(xklinha1,'e',xklinha2)
