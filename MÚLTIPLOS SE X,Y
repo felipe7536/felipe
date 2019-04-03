@@ -1,17 +1,43 @@
-Esta função que determina os N primeiros múltiplos de x,y.
-aluno;FEIPE RODRIGUES RIBEIRO
+Esta função que determina a soma dos múltiplos menores que n de x e y.
+aluno:FEIPE RODRIGUES RIBEIRO
 DRE:119052031
-Curso:MatemÃ¡tica Aplicada
-Disciplina:TÃ³picos de Mat. APL.A'''
+Curso:Matematica Aplicada
+Disciplina:Topicos da Mat. Aplic. A'''
+
+
 z=[]
-w=int(input('Escolha o primeiro número que queira achar entre os N primeiros múltiplos:'))
+t=[]
+w=int(input('Escolha o primeiro número que queira achar os múltiplos menores que n: '))
 print('')
-y=int(input('Defina o segundo número que queira encontrar entre os N primeiros múltiplos:'))
+y=int(input('Defina o segundo número que queira encontrar os múltiplos menores que n: '))
 print('')
-n=int(input('Defina o número N de múltiplos que queira encontrar:'))
-for x in range(1,n+1):
-    a=x*w*y
-    z.append(a)
-print('Os '+str(n)+'primeiros múltiplos de'+str(w)+'e'+str(w)+'são: ')
-print('')
+n=int(input('Você quer seus múltiplos sejam menores que: '))
+j=0
+k=0
+d=w
+e=2
+while d<n:
+   z .append(d)
+   j += d
+   d=w*e
+   e += 1
+   
+   
+   
+f=y
+e=2
+while f<n:
+   t .append(f)
+   k +=f
+   f=y*e
+   e += 1
+  
+
 print(z)
+print(t)
+
+soma = k+j
+
+print('seus multiplos de',w,'são',z)
+print('seus multiplos de',y,'são',t)
+print('e a soma deles é:',soma)
