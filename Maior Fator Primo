@@ -1,0 +1,21 @@
+'''Esse programa tem o objetivo de calcular o maior fator de um número primo
+nome:FELIPE RODRIGUES RIBEIRO
+DRE:119052031
+CURSO:Matemática Aplicada
+disciplina:Tópicos Mat.'''
+t=[]
+print('Calcule o maior fator primo do número que deseja.\k\k')
+print('')
+k=int(input('Defina o número de maior fator primo que deseja calcular: '))
+f=k
+print('')
+for i in range(2,k+1):#todos os números ate um N definido para acharmos todos os possíveis divisores
+        if k==1:
+                break
+        elif k%i==0:#se o resto é zero, temos um divisor
+                t.append(i)
+                while k%i==0:
+                        k=k/i#dividimos pelo divisor para eliminarmos os expoentes da fatoração
+h=len(t)
+print('O número '+str(f)+' possui '+str(h)+' fatores primos. O maior deles é:')
+print(t[-1])#último termo da lista
