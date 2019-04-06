@@ -1,0 +1,42 @@
+# Felipe
+'''Esse programa tem o intuito de somar os termos ímpares da sequência de Fibonacci
+aluno:FELIPE RODRIGUES RIBEIRO
+DRE:119052031
+CURSO:Matemática Aplicada
+Disciplina: Tópicos de Mat.'''
+
+
+Z=[0,1]#0 e 1 para conseguirmos iniciar uma soma dos termos anteriores
+S=[]
+n=0#para o loop while
+valor=int(input('Escolha o limite maximo para o valor do último termo da sequência: '))
+print('')
+a=0#para fazer a soma dos termos anteriores
+while n<10:
+        i=Z[a]+Z[a+1]
+        a+=1
+        if i>valor:
+                break 
+        else:
+                Z.append(i)#criando Fibonacci
+f=len(Z)
+for g in range(f):
+        if Z[g]%2==0:
+                pass#eliminando os números pares da lista
+        else:
+           S.append(Z[g])
+e=len(S)
+print('Construindo uma sequência de Fibonacci, tendo o último elemento desta lista menor que '
++str(valor)+', teremos:')
+print(Z)
+print('')
+print('Agora separando os ímpares desta lista teremos: ')
+print(S)
+print('')
+print('A soma de todos os elementos desta lista é:')
+j=0#para a soma dos termos da lista definimos esta variável
+if e!=0:
+        for x in range(e):                
+                r=S[x]
+                j+=r
+print(j)
