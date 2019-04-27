@@ -1,0 +1,71 @@
+# Felipe
+''' Esse programa imprime a tabela unicode na parte das letras gregas e na parte do braile
+Aluno:FELIPE RODRIGUES RIBEIRO
+DRE:119052031'''
+
+def Tabela_braille ( a=10241 , b=10495  , c=25):
+
+    if  a > b:
+        ini=b
+        fim=a
+
+    else:
+        ini=a
+        fim=b   
+
+    if ini <10241:
+       ini=10241
+
+    if fim > 10495  :
+       fim= 10495
+
+
+
+    print("+-----------------+--------+------+-------+-----+")
+    print("|      Binário    |   Oct  |  Hex |  Dec  | Chr |")
+    print("+----------------+---------+------+-------+-----+")
+    for i in range(ini , fim+1):
+        z='{0:012b}'.format(i)
+        print("| {1} {2} | {0:5o} | {0:5x} | {0:5d} | {0:^c} |".format(i,z[:6],z[6:]))
+        if (i - ini + 1)%c ==0 and (i-fim)!=0:
+          print("+----------------+---------+------+-------+----+")
+          print("")
+          print("+-----------------+--------+------+-------+---+")
+          print("|      Binário    |   Oct  |  Hex |  Dec  |Chr|")
+          print("+-----------------+--------+------+-------+---+")
+    print("+-----------------+--------+------+-------+---+")
+
+
+def Tabela_grego ( a=945 , b=1317  , c=25):
+
+    if  a > b:
+        ini=b
+        fim=a
+
+    else:
+        ini=a
+        fim=b   
+
+    if ini <945:
+       ini=945
+
+    if fim > 1317  :
+       fim= 1317
+
+
+
+    print("+-----------------+--------+------+-------+-----+")
+    print("|      Binário    |   Oct  |  Hex |  Dec  | Chr |")
+    print("+----------------+---------+------+-------+-----+")
+    for i in range(ini , fim+1):
+        z='{0:012b}'.format(i)
+        print("| {1} {2} | {0:5o} | {0:5x} | {0:5d} | {0:^c} |".format(i,z[:6],z[6:]))
+        if (i - ini + 1)%c ==0 and (i-fim)!=0:
+          print("+---------------+--------+------+-------+---+")
+          print("")
+          print("+---------------+--------+------+-------+---+")
+          print("|    Binário    |   Oct  |  Hex |  Dec  |Chr|")
+          print("+---------------+--------+------+-------+---+")
+    print("+---------------+--------+------+-------+---+")
+
+
