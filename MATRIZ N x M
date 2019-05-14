@@ -1,0 +1,13 @@
+# Felipe
+''' Um PROGRAMA QUE GERA MATRIZES DE DIMENSÕES N E M'''
+
+n = int(input("Digite a dimensão n da matriz: "))
+m = int(input("Digite a dimensão m da matriz: "))
+i = int(input("escolha os valores da matriz"))
+matriz =[]
+
+for i in range(n):
+    matriz.append([i]*m)
+
+for i in range(n):
+    print(matriz[i])
