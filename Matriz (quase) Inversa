@@ -1,0 +1,18 @@
+# Felipe
+def matriz_nula(nlinhas, ncols):
+      M=[]    
+    for i in range(nlinhas): 
+        linha= [0]*ncols
+        M.append(linha)
+    return M
+
+def transporta(M):
+    nlinhas = len(M)
+    ncolunas = len(M[0])
+    T = matriz_nula(ncolunas, nlinhas)
+    for i in range(nlinhas):
+        for j in range(ncolunas):
+            T[j][i] = M[i][j]
+
+     return T
+            
